@@ -8,6 +8,8 @@
 
 #import "MDFPaymentCardUS.h"
 
+NSString *const kMDFPaymentCardUSDescriptionTemplate = @"-- MDFPaymentCardUS --\n\tCard #: %@\n\tCCV: %@\n\tExp: %@\n\tCard Holder: %@";
+
 @implementation MDFPaymentCardUS(MajorIndustryIdentifier)
 
 - (NSUInteger)majorIndustryIdentifierForByte:(NSUInteger)byte
@@ -67,6 +69,11 @@
     }
     
     return [self majorIndustryIdentifierForByte:[[self.creditCardNumber substringToIndex:1] integerValue]];
+}
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:kMDFPaymentCardUSDescriptionTemplate, self.creditCardNumber, self.creditCardVerification, self.expirationDate, self.cardHolderName];
 }
 
 @end

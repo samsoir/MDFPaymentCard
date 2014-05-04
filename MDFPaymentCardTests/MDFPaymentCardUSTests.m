@@ -86,6 +86,11 @@
     return @"";
 }
 
+- (NSString *)expectedDescription
+{
+    return [NSString stringWithFormat:@"-- MDFPaymentCardUS --\n\tCard #: %@\n\tCCV: %@\n\tExp: %@\n\tCard Holder: %@", [self creditCardNumber], [self ccv], [self expirationDate], [self cardHolderName]];
+}
+
 - (id<MDFPaymentCard>)paymentCardWithNumber:(NSString *)number
 {
     return [MDFPaymentCardUS paymentCardWithNumber:number
@@ -174,6 +179,16 @@
     id<MDFPaymentCard> unknown = [self paymentCardWithNumber:[self unknownMIICardNumber]];
 
     XCTAssertTrue([unknown majorIndustryIdentifier] == MDFPaymentCardMIIUnknown, @"Unknown card number");
+}
+
+- (void)testDescription
+{
+    id<MDFPaymentCard> paymentCard = [MDFPaymentCardUS paymentCardWithNumber:[self creditCardNumber]
+                                                                         ccv:[self ccv]
+                                                              expirationDate:[self expirationDate]
+                                                              cardHolderName:[self cardHolderName]];
+        
+    XCTAssertEqualObjects([paymentCard description], [self expectedDescription], @"Description did not match expected description");
 }
 
 @end

@@ -12,6 +12,8 @@
 #import <Foundation/Foundation.h>
 #import "MDFPaymentCard.h"
 
+FOUNDATION_EXPORT NSString *const kMDFPaymentCardUSDescriptionTemplate;
+
 @interface MDFPaymentCardUS : NSObject <MDFPaymentCard>
 
 @property (nonatomic, copy) NSString *creditCardNumber;

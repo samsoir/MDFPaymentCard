@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		7B218DA01915DA640010E4C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B218D9F1915DA640010E4C2 /* Foundation.framework */; };
 		7B218DA51915DA640010E4C2 /* MDFPaymentCard.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B218DA41915DA640010E4C2 /* MDFPaymentCard.h */; };
-		7B218DA71915DA640010E4C2 /* MDFPaymentCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DA61915DA640010E4C2 /* MDFPaymentCard.m */; };
 		7B218DAE1915DA650010E4C2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B218DAD1915DA650010E4C2 /* XCTest.framework */; };
 		7B218DAF1915DA650010E4C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B218D9F1915DA640010E4C2 /* Foundation.framework */; };
 		7B218DB11915DA650010E4C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B218DB01915DA650010E4C2 /* UIKit.framework */; };
 		7B218DB41915DA650010E4C2 /* libMDFPaymentCard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B218D9C1915DA640010E4C2 /* libMDFPaymentCard.a */; };
 		7B218DBA1915DA650010E4C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B218DB81915DA650010E4C2 /* InfoPlist.strings */; };
-		7B218DBC1915DA650010E4C2 /* MDFPaymentCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DBB1915DA650010E4C2 /* MDFPaymentCardTests.m */; };
+		7B218DC91915ED370010E4C2 /* MDFPaymentCardUS.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DC81915ED370010E4C2 /* MDFPaymentCardUS.m */; };
+		7B218DCB1915EEC00010E4C2 /* MDFPaymentCardUSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DCA1915EEC00010E4C2 /* MDFPaymentCardUSTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +46,16 @@
 		7B218D9F1915DA640010E4C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7B218DA31915DA640010E4C2 /* MDFPaymentCard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDFPaymentCard-Prefix.pch"; sourceTree = "<group>"; };
 		7B218DA41915DA640010E4C2 /* MDFPaymentCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFPaymentCard.h; sourceTree = "<group>"; };
-		7B218DA61915DA640010E4C2 /* MDFPaymentCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFPaymentCard.m; sourceTree = "<group>"; };
 		7B218DAC1915DA650010E4C2 /* MDFPaymentCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDFPaymentCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B218DAD1915DA650010E4C2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7B218DB01915DA650010E4C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7B218DB71915DA650010E4C2 /* MDFPaymentCardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MDFPaymentCardTests-Info.plist"; sourceTree = "<group>"; };
 		7B218DB91915DA650010E4C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7B218DBB1915DA650010E4C2 /* MDFPaymentCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFPaymentCardTests.m; sourceTree = "<group>"; };
+		7B218DC51915DBFA0010E4C2 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7B218DC61915DBFA0010E4C2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		7B218DC71915ED370010E4C2 /* MDFPaymentCardUS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFPaymentCardUS.h; sourceTree = "<group>"; };
+		7B218DC81915ED370010E4C2 /* MDFPaymentCardUS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFPaymentCardUS.m; sourceTree = "<group>"; };
+		7B218DCA1915EEC00010E4C2 /* MDFPaymentCardUSTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFPaymentCardUSTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		7B218D931915DA640010E4C2 = {
 			isa = PBXGroup;
 			children = (
+				7B218DC51915DBFA0010E4C2 /* LICENSE */,
+				7B218DC61915DBFA0010E4C2 /* README.md */,
 				7B218DA11915DA640010E4C2 /* MDFPaymentCard */,
 				7B218DB51915DA650010E4C2 /* MDFPaymentCardTests */,
 				7B218D9E1915DA640010E4C2 /* Frameworks */,
@@ -111,8 +116,9 @@
 			isa = PBXGroup;
 			children = (
 				7B218DA41915DA640010E4C2 /* MDFPaymentCard.h */,
-				7B218DA61915DA640010E4C2 /* MDFPaymentCard.m */,
 				7B218DA21915DA640010E4C2 /* Supporting Files */,
+				7B218DC71915ED370010E4C2 /* MDFPaymentCardUS.h */,
+				7B218DC81915ED370010E4C2 /* MDFPaymentCardUS.m */,
 			);
 			path = MDFPaymentCard;
 			sourceTree = "<group>";
@@ -128,8 +134,8 @@
 		7B218DB51915DA650010E4C2 /* MDFPaymentCardTests */ = {
 			isa = PBXGroup;
 			children = (
-				7B218DBB1915DA650010E4C2 /* MDFPaymentCardTests.m */,
 				7B218DB61915DA650010E4C2 /* Supporting Files */,
+				7B218DCA1915EEC00010E4C2 /* MDFPaymentCardUSTests.m */,
 			);
 			path = MDFPaymentCardTests;
 			sourceTree = "<group>";
@@ -224,7 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B218DA71915DA640010E4C2 /* MDFPaymentCard.m in Sources */,
+				7B218DC91915ED370010E4C2 /* MDFPaymentCardUS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B218DBC1915DA650010E4C2 /* MDFPaymentCardTests.m in Sources */,
+				7B218DCB1915EEC00010E4C2 /* MDFPaymentCardUSTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +335,7 @@
 		7B218DC01915DA650010E4C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/MDFPaymentCard.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDFPaymentCard/MDFPaymentCard-Prefix.pch";
@@ -341,6 +348,7 @@
 		7B218DC11915DA650010E4C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/MDFPaymentCard.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDFPaymentCard/MDFPaymentCard-Prefix.pch";

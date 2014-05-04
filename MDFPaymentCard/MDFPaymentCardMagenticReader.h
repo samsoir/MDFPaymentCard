@@ -17,7 +17,7 @@ FOUNDATION_EXPORT NSUInteger const kMDFPaymentCardByteMetaDataDateRange;
 FOUNDATION_EXPORT NSUInteger const kMDFPaymentCardDateComponents;
 FOUNDATION_EXPORT NSString * const kMDFPaymentCardDateFormatString;
 
-NS_ENUM(NSUInteger, MDFPaymentCardMagenticReaderErrorCode)
+typedef NS_ENUM(NSUInteger, MDFPaymentCardMagenticReaderErrorCode)
 {
     MDFPaymentCardMagenticReaderNoPaymentCard = 1 << 0,
     MDFPaymentCardMagenticReaderNoBytes       = 1 << 1,

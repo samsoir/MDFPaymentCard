@@ -61,6 +61,28 @@ NSString *const kMDFPaymentCardUSDescriptionTemplate = @"-- MDFPaymentCardUS --\
     return paymentCard;
 }
 
+- (BOOL)isEqualToPaymentCard:(id<MDFPaymentCard>)paymentCard
+{
+    BOOL equality = [self.creditCardNumber isEqualToString:[paymentCard creditCardNumber]];
+
+    if (equality)
+    {
+        equality = [self.creditCardVerification isEqualToString:[paymentCard creditCardVerification]];
+    }
+    
+    if (equality)
+    {
+        equality = [self.expirationDate isEqualToString:[paymentCard expirationDate]];
+    }
+    
+    if (equality)
+    {
+        equality = [self.cardHolderName isEqualToString:[paymentCard cardHolderName]];
+    }
+    
+    return equality;
+}
+
 - (NSUInteger)majorIndustryIdentifier
 {
     if ( ! self.creditCardNumber || ! [self.creditCardNumber length])

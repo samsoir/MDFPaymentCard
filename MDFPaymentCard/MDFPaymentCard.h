@@ -36,6 +36,8 @@ typedef NS_ENUM(NSUInteger, MDFPaymentCardMII) {
 - (NSString *)cardHolderName;
 - (void)setCardHolderName:(NSString *)cardHolderName;
 
+- (BOOL)isEqualToPaymentCard:(id<MDFPaymentCard>)paymentCard;
+
 - (NSUInteger)majorIndustryIdentifier;
 
 @optional

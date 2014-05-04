@@ -23,6 +23,8 @@ FOUNDATION_EXPORT NSString *const kMDFPaymentCardUSDescriptionTemplate;
 
 + (MDFPaymentCardUS *)paymentCardWithNumber:(NSString *)cardNumber ccv:(NSString *)ccv expirationDate:(NSString *)expirationDate cardHolderName:(NSString *)cardHolderName;
 
+- (BOOL)isEqualToPaymentCard:(id<MDFPaymentCard>)paymentCard;
+
 - (NSUInteger)majorIndustryIdentifier;
 
 @end

@@ -187,8 +187,30 @@
                                                                          ccv:[self ccv]
                                                               expirationDate:[self expirationDate]
                                                               cardHolderName:[self cardHolderName]];
-        
+    
     XCTAssertEqualObjects([paymentCard description], [self expectedDescription], @"Description did not match expected description");
+}
+
+- (void)testIsEqualToPaymentCard
+{
+    id<MDFPaymentCard> paymentCard1 = [MDFPaymentCardUS paymentCardWithNumber:[self creditCardNumber]
+                                                                         ccv:[self ccv]
+                                                              expirationDate:[self expirationDate]
+                                                              cardHolderName:[self cardHolderName]];
+
+    id<MDFPaymentCard> paymentCard2 = [MDFPaymentCardUS paymentCardWithNumber:[self creditCardNumber]
+                                                                          ccv:[self ccv]
+                                                               expirationDate:[self expirationDate]
+                                                               cardHolderName:[self cardHolderName]];
+
+    XCTAssertTrue([paymentCard1 isEqualToPaymentCard:paymentCard2], @"Identical payment cards should be equal");
+    
+    id<MDFPaymentCard> paymentCard3 = [MDFPaymentCardUS paymentCardWithNumber:[self merchandizingAndBankingMIICardNumber]
+                                                                          ccv:[self ccv]
+                                                               expirationDate:[self expirationDate]
+                                                               cardHolderName:[self cardHolderName]];
+
+    XCTAssertFalse([paymentCard1 isEqualToPaymentCard:paymentCard3], @"Differing payment cards should not be equal");
 }
 
 @end

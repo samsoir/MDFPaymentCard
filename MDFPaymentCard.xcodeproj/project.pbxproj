@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B218DA01915DA640010E4C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B218D9F1915DA640010E4C2 /* Foundation.framework */; };
+		7B218DA51915DA640010E4C2 /* MDFPaymentCard.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B218DA41915DA640010E4C2 /* MDFPaymentCard.h */; };
+		7B218DA71915DA640010E4C2 /* MDFPaymentCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DA61915DA640010E4C2 /* MDFPaymentCard.m */; };
+		7B218DAE1915DA650010E4C2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B218DAD1915DA650010E4C2 /* XCTest.framework */; };
+		7B218DAF1915DA650010E4C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B218D9F1915DA640010E4C2 /* Foundation.framework */; };
+		7B218DB11915DA650010E4C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B218DB01915DA650010E4C2 /* UIKit.framework */; };
+		7B218DB41915DA650010E4C2 /* libMDFPaymentCard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B218D9C1915DA640010E4C2 /* libMDFPaymentCard.a */; };
+		7B218DBA1915DA650010E4C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B218DB81915DA650010E4C2 /* InfoPlist.strings */; };
+		7B218DBC1915DA650010E4C2 /* MDFPaymentCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DBB1915DA650010E4C2 /* MDFPaymentCardTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B218DB21915DA650010E4C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B218D941915DA640010E4C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B218D9B1915DA640010E4C2;
+			remoteInfo = MDFPaymentCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7B218D9A1915DA640010E4C2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				7B218DA51915DA640010E4C2 /* MDFPaymentCard.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7B218D9C1915DA640010E4C2 /* libMDFPaymentCard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMDFPaymentCard.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B218D9F1915DA640010E4C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7B218DA31915DA640010E4C2 /* MDFPaymentCard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDFPaymentCard-Prefix.pch"; sourceTree = "<group>"; };
+		7B218DA41915DA640010E4C2 /* MDFPaymentCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFPaymentCard.h; sourceTree = "<group>"; };
+		7B218DA61915DA640010E4C2 /* MDFPaymentCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFPaymentCard.m; sourceTree = "<group>"; };
+		7B218DAC1915DA650010E4C2 /* MDFPaymentCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDFPaymentCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B218DAD1915DA650010E4C2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7B218DB01915DA650010E4C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7B218DB71915DA650010E4C2 /* MDFPaymentCardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MDFPaymentCardTests-Info.plist"; sourceTree = "<group>"; };
+		7B218DB91915DA650010E4C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7B218DBB1915DA650010E4C2 /* MDFPaymentCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFPaymentCardTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B218D991915DA640010E4C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B218DA01915DA640010E4C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B218DA91915DA650010E4C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B218DB41915DA650010E4C2 /* libMDFPaymentCard.a in Frameworks */,
+				7B218DAE1915DA650010E4C2 /* XCTest.framework in Frameworks */,
+				7B218DB11915DA650010E4C2 /* UIKit.framework in Frameworks */,
+				7B218DAF1915DA650010E4C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B218D931915DA640010E4C2 = {
+			isa = PBXGroup;
+			children = (
+				7B218DA11915DA640010E4C2 /* MDFPaymentCard */,
+				7B218DB51915DA650010E4C2 /* MDFPaymentCardTests */,
+				7B218D9E1915DA640010E4C2 /* Frameworks */,
+				7B218D9D1915DA640010E4C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B218D9D1915DA640010E4C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B218D9C1915DA640010E4C2 /* libMDFPaymentCard.a */,
+				7B218DAC1915DA650010E4C2 /* MDFPaymentCardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B218D9E1915DA640010E4C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B218D9F1915DA640010E4C2 /* Foundation.framework */,
+				7B218DAD1915DA650010E4C2 /* XCTest.framework */,
+				7B218DB01915DA650010E4C2 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B218DA11915DA640010E4C2 /* MDFPaymentCard */ = {
+			isa = PBXGroup;
+			children = (
+				7B218DA41915DA640010E4C2 /* MDFPaymentCard.h */,
+				7B218DA61915DA640010E4C2 /* MDFPaymentCard.m */,
+				7B218DA21915DA640010E4C2 /* Supporting Files */,
+			);
+			path = MDFPaymentCard;
+			sourceTree = "<group>";
+		};
+		7B218DA21915DA640010E4C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B218DA31915DA640010E4C2 /* MDFPaymentCard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B218DB51915DA650010E4C2 /* MDFPaymentCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B218DBB1915DA650010E4C2 /* MDFPaymentCardTests.m */,
+				7B218DB61915DA650010E4C2 /* Supporting Files */,
+			);
+			path = MDFPaymentCardTests;
+			sourceTree = "<group>";
+		};
+		7B218DB61915DA650010E4C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B218DB71915DA650010E4C2 /* MDFPaymentCardTests-Info.plist */,
+				7B218DB81915DA650010E4C2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B218D9B1915DA640010E4C2 /* MDFPaymentCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B218DBF1915DA650010E4C2 /* Build configuration list for PBXNativeTarget "MDFPaymentCard" */;
+			buildPhases = (
+				7B218D981915DA640010E4C2 /* Sources */,
+				7B218D991915DA640010E4C2 /* Frameworks */,
+				7B218D9A1915DA640010E4C2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MDFPaymentCard;
+			productName = MDFPaymentCard;
+			productReference = 7B218D9C1915DA640010E4C2 /* libMDFPaymentCard.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7B218DAB1915DA650010E4C2 /* MDFPaymentCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B218DC21915DA650010E4C2 /* Build configuration list for PBXNativeTarget "MDFPaymentCardTests" */;
+			buildPhases = (
+				7B218DA81915DA650010E4C2 /* Sources */,
+				7B218DA91915DA650010E4C2 /* Frameworks */,
+				7B218DAA1915DA650010E4C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B218DB31915DA650010E4C2 /* PBXTargetDependency */,
+			);
+			name = MDFPaymentCardTests;
+			productName = MDFPaymentCardTests;
+			productReference = 7B218DAC1915DA650010E4C2 /* MDFPaymentCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B218D941915DA640010E4C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Maison de Freyssinet";
+			};
+			buildConfigurationList = 7B218D971915DA640010E4C2 /* Build configuration list for PBXProject "MDFPaymentCard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7B218D931915DA640010E4C2;
+			productRefGroup = 7B218D9D1915DA640010E4C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B218D9B1915DA640010E4C2 /* MDFPaymentCard */,
+				7B218DAB1915DA650010E4C2 /* MDFPaymentCardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B218DAA1915DA650010E4C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B218DBA1915DA650010E4C2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B218D981915DA640010E4C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B218DA71915DA640010E4C2 /* MDFPaymentCard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B218DA81915DA650010E4C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B218DBC1915DA650010E4C2 /* MDFPaymentCardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B218DB31915DA650010E4C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B218D9B1915DA640010E4C2 /* MDFPaymentCard */;
+			targetProxy = 7B218DB21915DA650010E4C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B218DB81915DA650010E4C2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B218DB91915DA650010E4C2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B218DBD1915DA650010E4C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7B218DBE1915DA650010E4C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B218DC01915DA650010E4C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MDFPaymentCard.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MDFPaymentCard/MDFPaymentCard-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7B218DC11915DA650010E4C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MDFPaymentCard.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MDFPaymentCard/MDFPaymentCard-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7B218DC31915DA650010E4C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MDFPaymentCard/MDFPaymentCard-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MDFPaymentCardTests/MDFPaymentCardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7B218DC41915DA650010E4C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MDFPaymentCard/MDFPaymentCard-Prefix.pch";
+				INFOPLIST_FILE = "MDFPaymentCardTests/MDFPaymentCardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B218D971915DA640010E4C2 /* Build configuration list for PBXProject "MDFPaymentCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B218DBD1915DA650010E4C2 /* Debug */,
+				7B218DBE1915DA650010E4C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B218DBF1915DA650010E4C2 /* Build configuration list for PBXNativeTarget "MDFPaymentCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B218DC01915DA650010E4C2 /* Debug */,
+				7B218DC11915DA650010E4C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7B218DC21915DA650010E4C2 /* Build configuration list for PBXNativeTarget "MDFPaymentCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B218DC31915DA650010E4C2 /* Debug */,
+				7B218DC41915DA650010E4C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B218D941915DA640010E4C2 /* Project object */;
+}

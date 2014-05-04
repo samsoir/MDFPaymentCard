@@ -18,10 +18,11 @@ FOUNDATION_EXPORT NSString *const kMDFPaymentCardUSDescriptionTemplate;
 
 @property (nonatomic, copy) NSString *creditCardNumber;
 @property (nonatomic, copy) NSString *creditCardVerification;
-@property (nonatomic, copy) NSString *expirationDate;
+@property (nonatomic) NSUInteger expirationDateMonth;
+@property (nonatomic) NSUInteger expirationDateYear;
 @property (nonatomic, copy) NSString *cardHolderName;
 
-+ (MDFPaymentCardUS *)paymentCardWithNumber:(NSString *)cardNumber ccv:(NSString *)ccv expirationDate:(NSString *)expirationDate cardHolderName:(NSString *)cardHolderName;
++ (MDFPaymentCardUS *)paymentCardWithNumber:(NSString *)cardNumber ccv:(NSString *)ccv expirationMonth:(NSUInteger)expirationMonth expirationYear:(NSUInteger)expirationYear cardHolderName:(NSString *)cardHolderName;
 
 - (BOOL)isEqualToPaymentCard:(id<MDFPaymentCard>)paymentCard;
 

@@ -31,6 +31,16 @@
     return @"05/2014";
 }
 
+- (NSUInteger)expirationDateMonth
+{
+    return 5;
+}
+
+- (NSUInteger)expirationDateYear
+{
+    return 2014;
+}
+
 - (NSString *)cardHolderName
 {
     return @"Jane Doe";
@@ -88,14 +98,15 @@
 
 - (NSString *)expectedDescription
 {
-    return [NSString stringWithFormat:@"-- MDFPaymentCardUS --\n\tCard #: %@\n\tCCV: %@\n\tExp: %@\n\tCard Holder: %@", [self creditCardNumber], [self ccv], [self expirationDate], [self cardHolderName]];
+    return [NSString stringWithFormat:@"-- MDFPaymentCardUS --\n\tCard #: %@\n\tCCV: %@\n\tExp: %u/%u\n\tCard Holder: %@", [self creditCardNumber], [self ccv], [self expirationDateMonth], [self expirationDateYear], [self cardHolderName]];
 }
 
 - (id<MDFPaymentCard>)paymentCardWithNumber:(NSString *)number
 {
     return [MDFPaymentCardUS paymentCardWithNumber:number
                                                ccv:nil
-                                    expirationDate:nil
+                                   expirationMonth:[self expirationDateMonth]
+                                    expirationYear:[self expirationDateYear]
                                     cardHolderName:nil];
 }
 
@@ -106,14 +117,15 @@
 - (void)testFactory
 {
     id<MDFPaymentCard> paymentCard = [MDFPaymentCardUS paymentCardWithNumber:[self creditCardNumber]
-                                                                         ccv:[self ccv]
-                                                              expirationDate:[self expirationDate]
+                                                                         ccv:[self ccv] expirationMonth:[self expirationDateMonth]
+                                                              expirationYear:[self expirationDateYear]
                                                               cardHolderName:[self cardHolderName]];
     
     XCTAssertNotNil(paymentCard, @"Payment card should not be nil");
     XCTAssertEqualObjects([paymentCard creditCardNumber], [self creditCardNumber], @"Payment card number: %@ does not match credit card number: %@", [paymentCard creditCardNumber], [self creditCardNumber]);
     XCTAssertEqualObjects([paymentCard creditCardVerification], [self ccv], @"Payment card ccv: %@ does not match credit card ccv: %@", [paymentCard creditCardVerification], [self ccv]);
-    XCTAssertEqualObjects([paymentCard expirationDate], [self expirationDate], @"Payment card exp date: %@ does not match credit card exp date: %@", [paymentCard expirationDate], [self expirationDate]);
+    XCTAssertTrue([paymentCard expirationDateMonth] == [self expirationDateMonth], @"Payment card exp date: %u does not match credit card exp date: %u", [paymentCard expirationDateMonth], [self expirationDateMonth]);
+    XCTAssertTrue([paymentCard expirationDateYear] == [self expirationDateYear], @"Payment card exp date: %u does not match credit card exp date: %u", [paymentCard expirationDateYear], [self expirationDateYear]);
     XCTAssertEqualObjects([paymentCard cardHolderName], [self cardHolderName], @"Payment card holder name: %@ does not match credit card holder name: %@", [paymentCard cardHolderName], [self cardHolderName]);
 }
 
@@ -185,7 +197,8 @@
 {
     id<MDFPaymentCard> paymentCard = [MDFPaymentCardUS paymentCardWithNumber:[self creditCardNumber]
                                                                          ccv:[self ccv]
-                                                              expirationDate:[self expirationDate]
+                                                             expirationMonth:[self expirationDateMonth]
+                                                              expirationYear:[self expirationDateYear]
                                                               cardHolderName:[self cardHolderName]];
     
     XCTAssertEqualObjects([paymentCard description], [self expectedDescription], @"Description did not match expected description");
@@ -194,20 +207,23 @@
 - (void)testIsEqualToPaymentCard
 {
     id<MDFPaymentCard> paymentCard1 = [MDFPaymentCardUS paymentCardWithNumber:[self creditCardNumber]
-                                                                         ccv:[self ccv]
-                                                              expirationDate:[self expirationDate]
-                                                              cardHolderName:[self cardHolderName]];
+                                                                          ccv:[self ccv]
+                                                              expirationMonth:[self expirationDateMonth]
+                                                               expirationYear:[self expirationDateYear]
+                                                               cardHolderName:[self cardHolderName]];
 
     id<MDFPaymentCard> paymentCard2 = [MDFPaymentCardUS paymentCardWithNumber:[self creditCardNumber]
                                                                           ccv:[self ccv]
-                                                               expirationDate:[self expirationDate]
+                                                              expirationMonth:[self expirationDateMonth]
+                                                               expirationYear:[self expirationDateYear]
                                                                cardHolderName:[self cardHolderName]];
 
     XCTAssertTrue([paymentCard1 isEqualToPaymentCard:paymentCard2], @"Identical payment cards should be equal");
     
     id<MDFPaymentCard> paymentCard3 = [MDFPaymentCardUS paymentCardWithNumber:[self merchandizingAndBankingMIICardNumber]
                                                                           ccv:[self ccv]
-                                                               expirationDate:[self expirationDate]
+                                                              expirationMonth:[self expirationDateMonth]
+                                                               expirationYear:[self expirationDateYear]
                                                                cardHolderName:[self cardHolderName]];
 
     XCTAssertFalse([paymentCard1 isEqualToPaymentCard:paymentCard3], @"Differing payment cards should not be equal");

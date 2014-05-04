@@ -16,6 +16,9 @@
 		7B218DBA1915DA650010E4C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B218DB81915DA650010E4C2 /* InfoPlist.strings */; };
 		7B218DC91915ED370010E4C2 /* MDFPaymentCardUS.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DC81915ED370010E4C2 /* MDFPaymentCardUS.m */; };
 		7B218DCB1915EEC00010E4C2 /* MDFPaymentCardUSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DCA1915EEC00010E4C2 /* MDFPaymentCardUSTests.m */; };
+		7B218DD1191608260010E4C2 /* MDFPaymentCardReader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B218DCE1916079E0010E4C2 /* MDFPaymentCardReader.h */; };
+		7B218DD4191609310010E4C2 /* MDFPaymentCardMagenticReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DD3191609310010E4C2 /* MDFPaymentCardMagenticReader.m */; };
+		7B218DD6191609FC0010E4C2 /* MDFPaymentCardMagneticReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DD5191609FC0010E4C2 /* MDFPaymentCardMagneticReaderTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				7B218DD1191608260010E4C2 /* MDFPaymentCardReader.h in CopyFiles */,
 				7B218DA51915DA640010E4C2 /* MDFPaymentCard.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +60,10 @@
 		7B218DC71915ED370010E4C2 /* MDFPaymentCardUS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFPaymentCardUS.h; sourceTree = "<group>"; };
 		7B218DC81915ED370010E4C2 /* MDFPaymentCardUS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFPaymentCardUS.m; sourceTree = "<group>"; };
 		7B218DCA1915EEC00010E4C2 /* MDFPaymentCardUSTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFPaymentCardUSTests.m; sourceTree = "<group>"; };
+		7B218DCE1916079E0010E4C2 /* MDFPaymentCardReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFPaymentCardReader.h; sourceTree = "<group>"; };
+		7B218DD2191609310010E4C2 /* MDFPaymentCardMagenticReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFPaymentCardMagenticReader.h; sourceTree = "<group>"; };
+		7B218DD3191609310010E4C2 /* MDFPaymentCardMagenticReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFPaymentCardMagenticReader.m; sourceTree = "<group>"; };
+		7B218DD5191609FC0010E4C2 /* MDFPaymentCardMagneticReaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFPaymentCardMagneticReaderTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,9 @@
 				7B218DA21915DA640010E4C2 /* Supporting Files */,
 				7B218DC71915ED370010E4C2 /* MDFPaymentCardUS.h */,
 				7B218DC81915ED370010E4C2 /* MDFPaymentCardUS.m */,
+				7B218DCE1916079E0010E4C2 /* MDFPaymentCardReader.h */,
+				7B218DD2191609310010E4C2 /* MDFPaymentCardMagenticReader.h */,
+				7B218DD3191609310010E4C2 /* MDFPaymentCardMagenticReader.m */,
 			);
 			path = MDFPaymentCard;
 			sourceTree = "<group>";
@@ -136,6 +147,7 @@
 			children = (
 				7B218DB61915DA650010E4C2 /* Supporting Files */,
 				7B218DCA1915EEC00010E4C2 /* MDFPaymentCardUSTests.m */,
+				7B218DD5191609FC0010E4C2 /* MDFPaymentCardMagneticReaderTests.m */,
 			);
 			path = MDFPaymentCardTests;
 			sourceTree = "<group>";
@@ -231,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B218DC91915ED370010E4C2 /* MDFPaymentCardUS.m in Sources */,
+				7B218DD4191609310010E4C2 /* MDFPaymentCardMagenticReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B218DCB1915EEC00010E4C2 /* MDFPaymentCardUSTests.m in Sources */,
+				7B218DD6191609FC0010E4C2 /* MDFPaymentCardMagneticReaderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 #import "MDFPaymentCardUS.h"
 
-NSString *const kMDFPaymentCardUSDescriptionTemplate = @"-- MDFPaymentCardUS --\n\tCard #: %@\n\tCCV: %@\n\tExp: %@\n\tCard Holder: %@";
+NSString *const kMDFPaymentCardUSDescriptionTemplate = @"-- MDFPaymentCardUS --\n\tCard #: %@\n\tCCV: %@\n\tExp: %u/%u\n\tCard Holder: %@";
 
 @implementation MDFPaymentCardUS(MajorIndustryIdentifier)
 
@@ -49,13 +49,14 @@ NSString *const kMDFPaymentCardUSDescriptionTemplate = @"-- MDFPaymentCardUS --\
 
 @implementation MDFPaymentCardUS
 
-+ (MDFPaymentCardUS *)paymentCardWithNumber:(NSString *)cardNumber ccv:(NSString *)ccv expirationDate:(NSString *)expirationDate cardHolderName:(NSString *)cardHolderName
++ (MDFPaymentCardUS *)paymentCardWithNumber:(NSString *)cardNumber ccv:(NSString *)ccv expirationMonth:(NSUInteger)expirationMonth expirationYear:(NSUInteger)expirationYear cardHolderName:(NSString *)cardHolderName
 {
     MDFPaymentCardUS *paymentCard = [[MDFPaymentCardUS alloc] init];
     
     paymentCard.creditCardNumber       = cardNumber;
     paymentCard.creditCardVerification = ccv;
-    paymentCard.expirationDate         = expirationDate;
+    paymentCard.expirationDateMonth    = expirationMonth;
+    paymentCard.expirationDateYear     = expirationYear;
     paymentCard.cardHolderName         = cardHolderName;
     
     return paymentCard;
@@ -72,7 +73,7 @@ NSString *const kMDFPaymentCardUSDescriptionTemplate = @"-- MDFPaymentCardUS --\
     
     if (equality)
     {
-        equality = [self.expirationDate isEqualToString:[paymentCard expirationDate]];
+        equality = (self.expirationDateMonth == [paymentCard expirationDateMonth]) && (self.expirationDateYear == [paymentCard expirationDateYear]);
     }
     
     if (equality)
@@ -95,7 +96,7 @@ NSString *const kMDFPaymentCardUSDescriptionTemplate = @"-- MDFPaymentCardUS --\
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:kMDFPaymentCardUSDescriptionTemplate, self.creditCardNumber, self.creditCardVerification, self.expirationDate, self.cardHolderName];
+    return [NSString stringWithFormat:kMDFPaymentCardUSDescriptionTemplate, self.creditCardNumber, self.creditCardVerification, self.expirationDateMonth, self.expirationDateYear, self.cardHolderName];
 }
 
 @end

@@ -30,8 +30,10 @@ typedef NS_ENUM(NSUInteger, MDFPaymentCardMII) {
 - (NSString *)creditCardVerification;
 - (void)setCreditCardVerification:(NSString *)creditCardVerification;
 
-- (NSString *)expirationDate;
-- (void)setExpirationDate:(NSString *)expirationDate;
+- (NSUInteger)expirationDateMonth;
+- (void)setExpirationDateMonth:(NSUInteger)expirationDateMonth;
+- (NSUInteger)expirationDateYear;
+- (void)setExpirationDateYear:(NSUInteger)expirationDateYear;
 
 - (NSString *)cardHolderName;
 - (void)setCardHolderName:(NSString *)cardHolderName;

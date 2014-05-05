@@ -12,6 +12,7 @@
 #import <Foundation/Foundation.h>
 #import "MDFPaymentCard.h"
 #import "MDFPaymentCardBillingAddress.h"
+#import "MDFPaymentMethodValidator.h"
 
 @protocol MDFPaymentMethod <NSObject>
 

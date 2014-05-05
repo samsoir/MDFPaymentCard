@@ -23,6 +23,10 @@
 		7B218DDF1916BB180010E4C2 /* MDFPaymentCardBillingAddressUSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DDE1916BB180010E4C2 /* MDFPaymentCardBillingAddressUSTests.m */; };
 		7B218DE31916C7920010E4C2 /* MDFPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DE21916C7920010E4C2 /* MDFPaymentMethod.m */; };
 		7B218DE51916C8250010E4C2 /* MDFPaymentMethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DE41916C8250010E4C2 /* MDFPaymentMethodTests.m */; };
+		7B218DE91916E02A0010E4C2 /* MDFPaymentMethodValidatorUS.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DE81916E02A0010E4C2 /* MDFPaymentMethodValidatorUS.m */; };
+		7B218DEB1916E19F0010E4C2 /* MDFPaymentMethodValidatorUSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DEA1916E19F0010E4C2 /* MDFPaymentMethodValidatorUSTests.m */; };
+		7B218DEE1916E4900010E4C2 /* MDFPaymentCardLuhnChecksum.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DED1916E4900010E4C2 /* MDFPaymentCardLuhnChecksum.m */; };
+		7B218DF01916E4A20010E4C2 /* MDFPaymentCardLuhnChecksumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B218DEF1916E4A20010E4C2 /* MDFPaymentCardLuhnChecksumTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,13 @@
 		7B218DE11916C7920010E4C2 /* MDFPaymentMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFPaymentMethod.h; sourceTree = "<group>"; };
 		7B218DE21916C7920010E4C2 /* MDFPaymentMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFPaymentMethod.m; sourceTree = "<group>"; };
 		7B218DE41916C8250010E4C2 /* MDFPaymentMethodTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFPaymentMethodTests.m; sourceTree = "<group>"; };
+		7B218DE61916D8350010E4C2 /* MDFPaymentMethodValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFPaymentMethodValidator.h; sourceTree = "<group>"; };
+		7B218DE71916E02A0010E4C2 /* MDFPaymentMethodValidatorUS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFPaymentMethodValidatorUS.h; sourceTree = "<group>"; };
+		7B218DE81916E02A0010E4C2 /* MDFPaymentMethodValidatorUS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFPaymentMethodValidatorUS.m; sourceTree = "<group>"; };
+		7B218DEA1916E19F0010E4C2 /* MDFPaymentMethodValidatorUSTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFPaymentMethodValidatorUSTests.m; sourceTree = "<group>"; };
+		7B218DEC1916E4900010E4C2 /* MDFPaymentCardLuhnChecksum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFPaymentCardLuhnChecksum.h; sourceTree = "<group>"; };
+		7B218DED1916E4900010E4C2 /* MDFPaymentCardLuhnChecksum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFPaymentCardLuhnChecksum.m; sourceTree = "<group>"; };
+		7B218DEF1916E4A20010E4C2 /* MDFPaymentCardLuhnChecksumTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFPaymentCardLuhnChecksumTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +157,11 @@
 				7B218DDC1916B7B30010E4C2 /* MDFPaymentCardBillingAddressUS.m */,
 				7B218DE11916C7920010E4C2 /* MDFPaymentMethod.h */,
 				7B218DE21916C7920010E4C2 /* MDFPaymentMethod.m */,
+				7B218DE61916D8350010E4C2 /* MDFPaymentMethodValidator.h */,
+				7B218DE71916E02A0010E4C2 /* MDFPaymentMethodValidatorUS.h */,
+				7B218DE81916E02A0010E4C2 /* MDFPaymentMethodValidatorUS.m */,
+				7B218DEC1916E4900010E4C2 /* MDFPaymentCardLuhnChecksum.h */,
+				7B218DED1916E4900010E4C2 /* MDFPaymentCardLuhnChecksum.m */,
 			);
 			path = MDFPaymentCard;
 			sourceTree = "<group>";
@@ -166,6 +182,8 @@
 				7B218DD5191609FC0010E4C2 /* MDFPaymentCardMagneticReaderTests.m */,
 				7B218DDE1916BB180010E4C2 /* MDFPaymentCardBillingAddressUSTests.m */,
 				7B218DE41916C8250010E4C2 /* MDFPaymentMethodTests.m */,
+				7B218DEA1916E19F0010E4C2 /* MDFPaymentMethodValidatorUSTests.m */,
+				7B218DEF1916E4A20010E4C2 /* MDFPaymentCardLuhnChecksumTests.m */,
 			);
 			path = MDFPaymentCardTests;
 			sourceTree = "<group>";
@@ -262,7 +280,9 @@
 			files = (
 				7B218DC91915ED370010E4C2 /* MDFPaymentCardUS.m in Sources */,
 				7B218DD4191609310010E4C2 /* MDFPaymentCardMagenticReader.m in Sources */,
+				7B218DEE1916E4900010E4C2 /* MDFPaymentCardLuhnChecksum.m in Sources */,
 				7B218DDD1916B7B30010E4C2 /* MDFPaymentCardBillingAddressUS.m in Sources */,
+				7B218DE91916E02A0010E4C2 /* MDFPaymentMethodValidatorUS.m in Sources */,
 				7B218DE31916C7920010E4C2 /* MDFPaymentMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,8 +292,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B218DDF1916BB180010E4C2 /* MDFPaymentCardBillingAddressUSTests.m in Sources */,
+				7B218DEB1916E19F0010E4C2 /* MDFPaymentMethodValidatorUSTests.m in Sources */,
 				7B218DCB1915EEC00010E4C2 /* MDFPaymentCardUSTests.m in Sources */,
 				7B218DD6191609FC0010E4C2 /* MDFPaymentCardMagneticReaderTests.m in Sources */,
+				7B218DF01916E4A20010E4C2 /* MDFPaymentCardLuhnChecksumTests.m in Sources */,
 				7B218DE51916C8250010E4C2 /* MDFPaymentMethodTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
